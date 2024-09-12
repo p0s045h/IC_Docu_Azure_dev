@@ -6,6 +6,7 @@ deploy:
     notify_email: Win2k12-Elimination@wal-mart.com
     apm_id: APM0019511
     ssp_number: SSP00009224
+    deploy_id: abe56bf8-14f9-4bca-a9d6-e31fbab9db69
   environments:
     - name: "dev"
       deploy_id: "5bb3b72f-a2c8-4454-a18a-86824f6b5021"
@@ -16,3 +17,6 @@ deploy:
         inputs:
           plaintext:
             name: "Intelligentcapture_Documentum"
+  simple-compute:
+      source: "localterraform.com/SharedModules/simple-compute/azurerm"
+      version: "1.9.1"

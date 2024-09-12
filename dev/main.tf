@@ -1,13 +1,14 @@
 locals {
-      azure_resource_group_name              = "Opentextcloud-icdocudev-eastus2_0-NPROD-000"
-      azure_subscription_id                  = "23c6c55f-2b36-4869-9420-0c8bc50854fd"
-      virtual_machine_windows_admin_groups = "homeoffice/opentextssl"
-      tag_apmid                            = "APM0019511"
-      tag_application_name                 = "IC_Documentum"
-      tag_environment_type                 = "dev"
-      tag_notification_dist_list           = "Win2k12-Elimination@wal-mart.com"
-      #tag_owner_ad_group                   = ""
-      tag_team_rosters_product_id          = "1278"
+      azure_resource_group_name                          = "Opentextcloud-icdocudev-eastus2_0-NPROD-000"
+      azure_subscription_id                              = "23c6c55f-2b36-4869-9420-0c8bc50854fd"
+      virtual_machine_windows_admin_groups               = "homeoffice/opentextssl"
+      tag_apmid                                          = "APM0019511"
+      tag_application_name                               = "IC_Documentum"
+      tag_environment_type                               = "dev"
+      tag_notification_dist_list                         = "Win2k12-Elimination@wal-mart.com"
+      #tag_owner_ad_group                                = ""
+      tag_team_rosters_product_id                        = "1278"
+      virtual_machine_walmart_approved_operating_system  = "windows_2022_gen2"
   }
 
   provider "azurerm" {
